@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -9,6 +10,7 @@ class CongesController extends Controller
 {
     /**
      * @Route("/conges", name="conges")
+     * @Method("GET")
      */
     public function indexAction()
     {
@@ -18,6 +20,7 @@ class CongesController extends Controller
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/conges/artt", name="artt")
+     * @Method("GET")
      */
     public function arttAction()
     {
